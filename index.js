@@ -18,6 +18,6 @@ app.use(express.json())
 
 require("./routes")(app)
 
-app.listen(4200, () => {
+app.listen(process.env.PORT, () => {
     console.log("server running")
 })
